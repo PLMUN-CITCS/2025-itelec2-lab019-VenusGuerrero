@@ -5,19 +5,18 @@ def get_student_score():
 def calculate_grade(score):
     if score >= 90:
         return 'A'
-    elif score >= 80:
+    if score >= 80:
         return 'B'
-    elif score >= 70:
+    if score >= 70:
         return 'C'
-    elif score >= 60:
+    if score >= 60:
         return 'D'
-    else:
-        return 'F'
+    return 'F'
 
 
-score = get_student_score()
-grade = calculate_grade(score)
-print(f"Your Grade is: {grade}")
+final_score = get_student_score()
+final_grade = calculate_grade(final_score)
+print(f"Your Grade is: {final_grade}")
 
 
 
