@@ -14,7 +14,10 @@ def calculate_grade(score):
     else:
         return 'F'
 
-score = get_student_score()
-grade = calculate_grade(score)
-print(f"Your Grade is: {grade}")
-    
+def main():
+    score = get_student_score()
+    grade = calculate_grade(score)
+    print(f"Your Grade is: {grade}")
+
+if __name__ == "__main__":
+    main()
